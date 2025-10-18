@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Wedding Invite — Bengali & English Switch</title>
- <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Satisfy&family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+  <title>Reception Invite — Indranil & Sahelly</title>
+ <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Satisfy&family=Berkshire+Swash&family=Atma:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
     :root{
@@ -16,7 +16,7 @@
     *{box-sizing:border-box}
     body{
       margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
-       font-family: 'Satisfy', 'Hind Siliguri', system-ui, sans-serif;
+       font-family: 'Satisfy', 'Atma', system-ui, sans-serif;
   color: #3b2b2b;
       background:var(--bg);
       padding:4px;
@@ -103,10 +103,18 @@
       font-family: 'Great Vibes', cursive;
      font-weight: 700; /* simulate bold */
   text-shadow: 0 1px 1px rgba(0,0,0,0.2);
-  letter-spacing: 0.5px;
+  letter-spacing: 0.75px;
       font-size:36px;
     }
-
+ h1[data-en], .head[data-en]{
+       text-align: center;
+      font-family: 'Berkshire Swash', cursive;
+     font-weight: 700; /* simulate bold */
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  letter-spacing: 0.85px;
+      font-size:44px;
+    }
+    
 h1[data-en], .body[data-en]{
 text-align: center;
       font-family: 'Great Vibes', cursive;
@@ -249,18 +257,18 @@ text-align: center;
     <div class="floral">
       <img src="images/floral.png" alt="Decorative floral art">
     </div>
-
+ <div class="head" data-bn="আপনি আমন্ত্রিত" data-en="You are Invited">You are Invited</div>
     <div class="details">
-      <div class="host" data-bn="বাসু পরিবারের তরফ থেকে," data-en="On behalf of the Basu family,">On behalf of the Basu family,</div>
-      <div class="host" data-bn="রিসেপশন অনুষ্ঠানে" data-en="We request your gracious presence">We request your gracious presence</div>
+      <div class="host" data-bn="বাসু পরিবারের তরফ থেকে," data-en="The Basu family,">The Basu family,</div>
+      <div class="host" data-bn="রিসেপশন অনুষ্ঠানে" data-en="Requests your gracious presence">Requests your gracious presence</div>
        <div class="host" data-bn="আপনার সদয় উপস্থিতি কামনা করছি" data-en="at the Reception ceremony of">at the Reception ceremony of</div>
       <div class="names" data-bn="ইন্দ্রনীল বসু" data-en="Indranil Basu">Indranil Basu</div>
 
- <div class="body" data-bn="প্রয়াত শ্রীমতি সুমনা বসু এবং শ্রী দীপঙ্কর বসুর পুত্র " data-en="S/o Late Mrs Sumana Basu and Mr Dipankar Basu">Son of Late Mrs Sumana Basu and Mr Dipankar Basu</div>
+ <div class="body" data-bn="প্রয়াত শ্রীমতি সুমনা বসু এবং শ্রী দীপঙ্কর বসুর পুত্র " data-en="S/o Late Mrs Sumana Basu and Mr Dipankar Basu">S/o Late Mrs Sumana Basu and Mr Dipankar Basu</div>
 
 <div class="names" data-bn="এবং" data-en="&">&</div>
 <div class="names" data-bn="সহেলী রায় চৌধুরী" data-en="Sahelly Roy Chowdhury">Sahelly Roy Chowdhury</div>
- <div class="body" data-bn="শ্রীমতি লিনা রায় চৌধুরী এবং শ্রী অমিতাভ রায় চৌধুরীর কন্যা " data-en="D/o Mrs Lina Roy Chowdhury and Mr Amitava Roy Chowdhury">Daughter of Mrs Lina Roy Chowdhury and Mr Amitava Roy Chowdhury</div>
+ <div class="body" data-bn="শ্রীমতি লিনা রায় চৌধুরী এবং শ্রী অমিতাভ রায় চৌধুরীর কন্যা " data-en="D/o Mrs Lina Roy Chowdhury and Mr Amitava Roy Chowdhury">D/o Mrs Lina Roy Chowdhury and Mr Amitava Roy Chowdhury</div>
 
   <!-- Event Stamps -->
   <div class="events">
@@ -299,7 +307,7 @@ text-align: center;
       <label>Your Name</label>
       <input type="text" name="name" required />
       
-      <label>Which event will you attend?</label>
+      <label>You are to attend,</label>
       <select name="event">
         <option>Reception (26 Jan)</option>
       </select>
@@ -442,6 +450,7 @@ document.getElementById('downloadjpgFileButton').addEventListener('click', funct
   </script>
 </body>
 </html>
+
 
 
 
